@@ -15,12 +15,14 @@ const Footer = () => {
             <div className='max-con py-10'>
                 <div className='grid grid-cols-3 gap-3 max-md:grid-cols-1'>
                     <div className=''>
-                        <Image
-                            width={300}
-                            height={100}
-                            alt=''
-                            src='/images/logo-white.png'
-                        />
+                        <div className='w-[100px] h-[100px] bg-white flex items-center justify-center p-3 rounded-xl'>
+                            <Image
+                                width={300}
+                                height={100}
+                                alt=''
+                                src='/images/logo.png'
+                            />
+                        </div>
 
                         <div className='flex items-center gap-3 mt-5'>
                             <div className='bg-yellow-primary text-white text-xl rounded-full p-1 cursor-pointer'>

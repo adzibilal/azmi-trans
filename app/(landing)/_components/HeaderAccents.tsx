@@ -6,10 +6,10 @@ const HeaderAccents = () => {
     return (
         <div className='bg-yellow-primary'>
             <div className='max-con py-2'>
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-between items-center max-md:flex-col'>
                     <div className='flex gap-3 items-center'>
                         <FaWhatsapp />
-                        <div className='font-bold'>08912983294</div>
+                        <div className='font-bold'>082218299990</div>
                     </div>
                     <div className='flex gap-3 items-center'>
                         <AiFillMail />

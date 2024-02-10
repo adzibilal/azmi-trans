@@ -33,7 +33,7 @@ const Navbar = () => {
 
                     <div
                         onClick={handleWa}
-                        className='bg-yellow-primary font-semibold uppercase w-max px-5 py-2 rounded-md hover:opacity-90 cursor-pointer'>
+                        className='bg-yellow-primary font-semibold uppercase w-max px-2 py-2 rounded-md hover:opacity-90 cursor-pointer text-xs'>
                         Hubungi Kami
                     </div>
                 </div>

@@ -6,10 +6,10 @@ const Perjalanan = () => {
         <div className='py-20 bg-zinc-50' id='perjalanan'>
             <div className='max-con'>
                 <div className='text-center text-zinc-800 font-bold text-4xl uppercase'>
-                    Jadwal Perjalanan Azmi Trans
+                    Jadwal Keberangkatan Azmi Trans
                 </div>
                 <div className='text-center text-zinc-500 mt-5 w-[90%] mx-auto mb-10'>
-                    Berikut adalah jadwal perjalanan Azmi Trans
+                    Berikut adalah Jadwal Keberangkatan Azmi Trans
                 </div>
 
                 <div className='grid grid-cols-3 gap-3 max-md:grid-cols-1'>

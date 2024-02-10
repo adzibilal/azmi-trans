@@ -35,12 +35,12 @@ const HeroSlider = () => {
                 modules={[Autoplay]}>
                 <SwiperSlide>
                     <div className='bg-zinc-400 w-screen aspect-[21/8] max-md:aspect-video flex items-center justify-center overflow-hidden'>
-                        <Image width={1920} height={1080} alt='' src='/images/slider-example.png' loading='eager' />
+                        <Image width={1920} height={1080} alt='' src='/images/slider1.png' loading='eager' />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='bg-zinc-400 w-screen aspect-[21/8] max-md:aspect-video flex items-center justify-center overflow-hidden'>
-                        <Image width={1920} height={1080} alt='' src='/images/slider-example.png' loading='eager' />
+                        <Image width={1920} height={1080} alt='' src='/images/slider2.png' loading='eager' />
                     </div>
                 </SwiperSlide>
                 

@@ -6,7 +6,7 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: 'AZMI TRANS',
-    description: 'AMAN NYAMAN EKONOMISs'
+    description: 'AMAN NYAMAN EKONOMIS'
 }
 
 export default function RootLayout({

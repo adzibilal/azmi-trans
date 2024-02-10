@@ -2,9 +2,20 @@ import Image from 'next/image'
 import React from 'react'
 
 const AboutUs = () => {
+    const handleClickWhatsapp = () => {
+        const text = `Halo Azmi Trans saya ingin booking kendaraan 👋`
+
+        // Membuat URL WhatsApp dengan parameter yang dinamis
+        const waURL = `https://api.whatsapp.com/send?phone=6282218299990&text=${encodeURIComponent(
+            text
+        )}`
+
+        // Membuka jendela baru dengan URL WhatsApp
+        window.open(waURL, '_blank')
+    }
     return (
-        <div className='py-20' id='tentang-kami'>
-            <div className='max-con'>
+        <div className='py-10'>
+            <div className='max-con' id='tentang-kami'>
                 <div className='grid grid-cols-[1.5fr_2fr] gap-3 items-center'>
                     <div className=''>
                         <Image
@@ -30,7 +41,11 @@ const AboutUs = () => {
                             terawat dan pengemudi yang profesional.
                         </div>
 
-                        <div className="bg-yellow-primary px-10 py-2 text-xl mt-5 rounded-md w-max font-semibold cursor-pointer hover:scale-105">Selengkapnya</div>
+                        <div
+                            className='bg-yellow-primary px-10 py-2 text-xl mt-5 rounded-md w-max font-semibold cursor-pointer hover:scale-105'
+                            onClick={handleClickWhatsapp}>
+                            Selengkapnya
+                        </div>
                     </div>
                 </div>
             </div>

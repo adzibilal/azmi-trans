@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
+import { AiFillMail } from 'react-icons/ai'
 
 const HeaderAccents = () => {
     return (
@@ -9,6 +10,10 @@ const HeaderAccents = () => {
                     <div className='flex gap-3 items-center'>
                         <FaWhatsapp />
                         <div className='font-bold'>08912983294</div>
+                    </div>
+                    <div className='flex gap-3 items-center'>
+                        <AiFillMail />
+                        <div className='font-bold'>azmitransbandung@gmail.com</div>
                     </div>
                 </div>
             </div>

@@ -56,7 +56,7 @@ const Footer = () => {
                                 <AiFillMail />
                             </div>
                             <div className='text-white'>
-                                azmitrans@gmail.com
+                                azmitransbandung@gmail.com
                             </div>
                         </div>
                         <div className='flex items-start gap-3'>
@@ -64,8 +64,8 @@ const Footer = () => {
                                 <FaMapPin />
                             </div>
                             <div className='text-white'>
-                                Jl. Moch. Toha No.359, Ciseureuh, Kec. Regol,
-                                Kota Bandung, Jawa Barat 40243
+                                Gg. SD Pelangi, Sukamukti, Kec. Majalaya,
+                                Kabupaten Bandung, Jawa Barat 40392
                             </div>
                         </div>
                     </div>
@@ -76,12 +76,14 @@ const Footer = () => {
                         </div>
                         <iframe
                             className='w-full'
-                            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.452894001655!2d107.6120495!3d-6.955781900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e8f1bd4b805b%3A0xeb08f818e953373c!2sJl.%20Moch.%20Toha%20No.359%2C%20Ciseureuh%2C%20Kec.%20Regol%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040256!5e0!3m2!1sid!2sid!4v1707537250656!5m2!1sid!2sid'
+                            src='https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3959.633936663326!2d107.744558!3d-7.052228999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMDMnMDguMCJTIDEwN8KwNDQnNDAuNCJF!5e0!3m2!1sid!2sid!4v1707548877936!5m2!1sid!2sid'
                             loading='lazy'></iframe>
                     </div>
                 </div>
 
-                <div className="text-center mt-10 text-white">©2024 Azmi Trans Travel & Tour All Rights Reserved.</div>
+                <div className='text-center mt-10 text-white'>
+                    ©2024 Azmi Trans Travel & Tour All Rights Reserved.
+                </div>
             </div>
         </div>
     )

@@ -5,6 +5,7 @@ import Services from './_components/Services'
 import Cta from './_components/Cta'
 import FloatingButton from './_components/FloatingButton'
 import Armada from './_components/Armada'
+import Perjalanan from './_components/Perjalanan'
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <HeroSlider />
             <AboutUs />
             <Services />
+            <Perjalanan />
             <Armada />
             <Cta />
             <FloatingButton />

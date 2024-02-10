@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <div className='bg-zinc-900'>
             <div className='max-con py-10'>
-                <div className='grid grid-cols-3 gap-3'>
+                <div className='grid grid-cols-3 gap-3 max-md:grid-cols-1'>
                     <div className=''>
                         <Image
                             width={300}

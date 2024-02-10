@@ -1,22 +1,13 @@
+'use client'
+import { handleWa } from '@/constants/wa'
 import Image from 'next/image'
 import React from 'react'
 
 const AboutUs = () => {
-    const handleClickWhatsapp = () => {
-        const text = `Halo Azmi Trans saya ingin booking kendaraan 👋`
-
-        // Membuat URL WhatsApp dengan parameter yang dinamis
-        const waURL = `https://api.whatsapp.com/send?phone=6282218299990&text=${encodeURIComponent(
-            text
-        )}`
-
-        // Membuka jendela baru dengan URL WhatsApp
-        window.open(waURL, '_blank')
-    }
     return (
         <div className='py-10'>
             <div className='max-con' id='tentang-kami'>
-                <div className='grid grid-cols-[1.5fr_2fr] gap-3 items-center'>
+                <div className='grid grid-cols-[1.5fr_2fr] gap-3 items-center max-md:grid-cols-1'>
                     <div className=''>
                         <Image
                             width={1000}
@@ -25,8 +16,8 @@ const AboutUs = () => {
                             src='/images/about-us.png'
                         />
                     </div>
-                    <div className=''>
-                        <div className='text-3xl font-bold text-zinc-800'>
+                    <div className='max-md:text-center'>
+                        <div className='text-3xl font-bold text-zinc-800 max-md:text-2xl'>
                             Azmi Trans Solusi Perjalanan Aman, <br /> Nyaman,
                             dan Ekonomis
                         </div>
@@ -42,8 +33,8 @@ const AboutUs = () => {
                         </div>
 
                         <div
-                            className='bg-yellow-primary px-10 py-2 text-xl mt-5 rounded-md w-max font-semibold cursor-pointer hover:scale-105'
-                            onClick={handleClickWhatsapp}>
+                            className='bg-yellow-primary px-10 py-2 text-xl mt-5 rounded-md w-max font-semibold cursor-pointer hover:scale-105 max-md:mx-auto'
+                            onClick={handleWa}>
                             Selengkapnya
                         </div>
                     </div>

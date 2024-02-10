@@ -1,3 +1,5 @@
+'use client'
+import { handleWa } from '@/constants/wa'
 import Image from 'next/image'
 import React from 'react'
 
@@ -16,14 +18,14 @@ const Armada = () => {
                     pengemudi profesional. Mari jelajahi pilihan armada kami:
                 </div>
 
-                <div className='grid grid-cols-2 gap-3 bg-white rounded-lg shadow-lg overflow-hidden items-center mb-10'>
+                <div className='grid grid-cols-2 gap-3 max-md:grid-cols-1 bg-white rounded-lg shadow-lg overflow-hidden items-center mb-10'>
                     <Image
                         width={1000}
                         height={500}
                         alt=''
                         src='/images/armada1.png'
                     />
-                    <div className='px-5'>
+                    <div className='px-5 max-md:pb-5'>
                         <div className='text-2xl font-semibold mb-2'>
                             Untuk Perjalanan Pribadi <br />
                             atau Kelompok Kecil:
@@ -39,19 +41,19 @@ const Armada = () => {
                             kursi nyaman, dan fitur hiburan lengkap.
                         </div>
 
-                        <div className='bg-yellow-primary font-semibold uppercase w-max px-5 py-2 rounded-md hover:opacity-90 cursor-pointer mt-5'>
+                        <div onClick={handleWa} className='bg-yellow-primary font-semibold uppercase w-max px-5 py-2 rounded-md hover:opacity-90 cursor-pointer mt-5'>
                             Booking
                         </div>
                     </div>
                 </div>
-                <div className='grid grid-cols-2 gap-3 bg-white rounded-lg shadow-lg overflow-hidden items-center mb-10'>
+                <div className='grid grid-cols-2 gap-3 max-md:grid-cols-1 bg-white rounded-lg shadow-lg overflow-hidden items-center mb-10'>
                     <Image
                         width={1000}
                         height={500}
                         alt=''
                         src='/images/armada2.png'
                     />
-                    <div className='px-5'>
+                    <div className='px-5 max-md:pb-5'>
                         <div className='text-2xl font-semibold mb-2'>
                             Untuk Perjalanan Grup Sedang:
                         </div>
@@ -62,19 +64,19 @@ const Armada = () => {
                             bawaan Anda.
                         </div>
 
-                        <div className='bg-yellow-primary font-semibold uppercase w-max px-5 py-2 rounded-md hover:opacity-90 cursor-pointer mt-5'>
+                        <div onClick={handleWa} className='bg-yellow-primary font-semibold uppercase w-max px-5 py-2 rounded-md hover:opacity-90 cursor-pointer mt-5'>
                             Booking
                         </div>
                     </div>
                 </div>
-                <div className='grid grid-cols-2 gap-3 bg-white rounded-lg shadow-lg overflow-hidden items-center mb-10'>
+                <div className='grid grid-cols-2 gap-3 max-md:grid-cols-1 bg-white rounded-lg shadow-lg overflow-hidden items-center mb-10'>
                     <Image
                         width={1000}
                         height={500}
                         alt=''
                         src='/images/armada3.png'
                     />
-                    <div className='px-5'>
+                    <div className='px-5 max-md:pb-5'>
                         <div className='text-2xl font-semibold mb-2'>
                             Untuk Perjalanan Grup Besar:
                         </div>
@@ -84,7 +86,7 @@ const Armada = () => {
                             dan keperluan transportasi perusahaan.
                         </div>
 
-                        <div className='bg-yellow-primary font-semibold uppercase w-max px-5 py-2 rounded-md hover:opacity-90 cursor-pointer mt-5'>
+                        <div onClick={handleWa} className='bg-yellow-primary font-semibold uppercase w-max px-5 py-2 rounded-md hover:opacity-90 cursor-pointer mt-5'>
                             Booking
                         </div>
                     </div>

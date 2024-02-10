@@ -13,7 +13,7 @@ const Services = () => {
                     kota, antara lain:
                 </div>
 
-                <div className='grid grid-cols-3 gap-4 mt-14'>
+                <div className='grid grid-cols-3 gap-4 mt-14 max-md:grid-cols-1'>
                     <div className='bg-white shadow-md text-center p-5 flex flex-col items-center justify-center rounded-2xl py-10'>
                         <div className='rounded-full shadow-sm bg-yellow-primary mb-5 text-[100px] p-8 text-white'>
                             <FaHome />

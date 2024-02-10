@@ -1,3 +1,5 @@
+'use client'
+import { handleWa } from '@/constants/wa'
 import React from 'react'
 
 const Cta = () => {
@@ -9,7 +11,11 @@ const Cta = () => {
                     dan nyaman bersama Azmi Trans!
                 </div>
 
-                <div className="bg-zinc-800 text-white animate-bounce px-5 py-2 text-xl rounded-md mt-10 cursor-pointer">Pesan Tiket Sekarang</div>
+                <div
+                    onClick={handleWa}
+                    className='bg-zinc-800 text-white animate-bounce px-5 py-2 text-xl rounded-md mt-10 cursor-pointer'>
+                    Pesan Tiket Sekarang
+                </div>
             </div>
         </div>
     )

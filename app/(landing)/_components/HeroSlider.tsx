@@ -43,6 +43,11 @@ const HeroSlider = () => {
                         <Image width={1920} height={1080} alt='' src='/images/slider2.png' loading='eager' />
                     </div>
                 </SwiperSlide>
+                <SwiperSlide>
+                    <div className='bg-zinc-400 w-screen aspect-[21/8] max-md:aspect-video flex items-center justify-center overflow-hidden'>
+                        <Image width={1920} height={1080} alt='' src='/images/slider3.png' loading='eager' />
+                    </div>
+                </SwiperSlide>
                 
             </Swiper>
         </>

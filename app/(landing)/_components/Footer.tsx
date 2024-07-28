@@ -51,7 +51,7 @@ const Footer = () => {
                             <div className='bg-yellow-primary text-white text-xl rounded-full p-1'>
                                 <FaWhatsapp />
                             </div>
-                            <div className='text-white'>082218299990</div>
+                            <div className='text-white'>+62 8382 6577 413</div>
                         </div>
                         <div className='flex items-center gap-3 mb-2'>
                             <div className='bg-yellow-primary text-white text-xl rounded-full p-1'>

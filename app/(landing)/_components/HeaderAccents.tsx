@@ -9,7 +9,7 @@ const HeaderAccents = () => {
                 <div className='flex justify-between items-center max-md:flex-col'>
                     <div className='flex gap-3 items-center'>
                         <FaWhatsapp />
-                        <div className='font-bold'>0838 26577 413</div>
+                        <div className='font-bold'>0838 7887 5304</div>
                     </div>
                     <div className='flex gap-3 items-center'>
                         <AiFillMail />

@@ -23,21 +23,11 @@ export default function RootLayout({
                 <title>AZMI TRANS</title>
                 <meta name='description' content='AMAN NYAMAN EKONOMIS' />
                 <link rel='icon' href='/favicon.ico' />
-                {/* Google tag (gtag.js) */}
-                <script
-                    async
-                    src='https://www.googletagmanager.com/gtag/js?id=AW-965062289'></script>
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'AW-965062289');
-                        `
-                    }}
-                />
             </Head>
+            <Script
+                async
+                src='https://www.googletagmanager.com/gtag/js?id=AW-965062289'></Script>
+            <Script src='/gtag.js' strategy='afterInteractive'></Script>
             <body className={montserrat.className}>{children}</body>
         </html>
     )

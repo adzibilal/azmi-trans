@@ -1,98 +1,83 @@
-import React from 'react'
+'use client'
+import React, { useState, useEffect } from 'react'
 import { AiFillClockCircle } from 'react-icons/ai'
 
 const Perjalanan = () => {
+    const [routes, setRoutes] = useState([
+        {
+            start: 'Bandung',
+            destinations: ['Jakarta', 'Tanggerang']
+        },
+        {
+            start: 'Bandung',
+            destinations: ['Tasik', 'Ciamis', 'Banjar', 'Pangandaran']
+        },
+        {
+            start: 'Bandung',
+            destinations: [
+                'Cirebon',
+                'Tegal',
+                'Semarang',
+                'Surabaya',
+                'Probolinggo',
+                'Banyuwangi',
+                'Denpasar'
+            ]
+        },
+        {
+            start: 'Bandung',
+            destinations: [
+                'Cilacap',
+                'Banjarnegara',
+                'Kebumen',
+                'Jogjakarta',
+                'Solo',
+                'Kediri',
+                'Malang'
+            ]
+        }
+    ])
+
     return (
-        <div className='py-20 bg-zinc-50' id='perjalanan'>
-            <div className='max-con'>
-                <div className='text-center text-zinc-800 font-bold text-4xl uppercase'>
+        <div
+            className='py-20 bg-gradient-to-r from-green-400 to-blue-500'
+            id='perjalanan'>
+            <div className='max-w-5xl mx-auto px-4'>
+                <div className='text-center text-white font-bold text-4xl uppercase'>
                     Jadwal Keberangkatan Azmi Trans
                 </div>
-                <div className='text-center text-zinc-500 mt-5 w-[90%] mx-auto mb-10'>
+                <div className='text-center text-white mt-5 w-[90%] mx-auto mb-10'>
                     Berikut adalah Jadwal Keberangkatan Azmi Trans
                 </div>
 
-                <div className='grid grid-cols-2 gap-3 max-md:grid-cols-1'>
-                    <div className='bg-white shadow-md text-center px-10 py-5 flex flex-col items-start justify-center rounded-2xl'>
-                        <div className='flex items-center gap-3'>
-                            <div className='bg-yellow-primary rounded-full text-4xl text-white p-1'>
-                                <AiFillClockCircle />
-                            </div>
-                            <div className=''>
-                                <div className='font-semibold mt-2 text-xl'>
-                                    Pangandaran - Bandung
+                <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
+                    {routes.map((route, index) => (
+                        <div
+                            key={index}
+                            className='bg-white shadow-lg text-center px-5 py-5 flex flex-col items-center justify-start rounded-2xl transform transition-transform hover:scale-105'>
+                            <div className='flex items-center gap-3 mb-4 flex-col'>
+                                <div className='bg-yellow-500 rounded-full text-4xl text-white p-2'>
+                                    <AiFillClockCircle />
                                 </div>
-                                <div className='flex gap-3 mt-2'>
-                                    <div className='bg-yellow-primary/10 text-yellow-600 font-semibold px-2 py-1 rounded-sm'>
-                                        09.00 WIB
-                                    </div>
-                                    <div className='bg-yellow-primary/10 text-yellow-600 font-semibold px-2 py-1 rounded-sm'>
-                                        13.00 WIB
-                                    </div>
+                                <div className='font-semibold text-xl text-gray-800'>
+                                    Start {route.start}
+                                </div>
+
+                                <div className='border-t-2 border-dashed border-gray-400 w-2/3 pt-2'>
+                                    Tujuan :
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className='bg-white shadow-md text-center px-10 py-5 flex flex-col items-start justify-center rounded-2xl'>
-                        <div className='flex items-center gap-3'>
-                            <div className='bg-yellow-primary rounded-full text-4xl text-white p-1'>
-                                <AiFillClockCircle />
-                            </div>
-                            <div className=''>
-                                <div className='font-semibold mt-2 text-xl'>
-                                    Pangandaran - Jakarta
-                                </div>
-                                <div className='flex gap-3 mt-2'>
-                                    <div className='bg-yellow-primary/10 text-yellow-600 font-semibold px-2 py-1 rounded-sm'>
-                                        16.00 WIB (PP)
+                            <div className='text-gray-600 flex flex-col'>
+                                {route.destinations.map((destination, i) => (
+                                    <div
+                                        key={i}
+                                        className='bg-yellow-100 text-yellow-700 font-semibold px-3 py-1 rounded-full inline-block m-1'>
+                                        {destination}
                                     </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
-                    </div>
-                    <div className='bg-white shadow-md text-center px-10 py-5 flex flex-col items-start justify-center rounded-2xl'>
-                        <div className='flex items-center gap-3'>
-                            <div className='bg-yellow-primary rounded-full text-4xl text-white p-1'>
-                                <AiFillClockCircle />
-                            </div>
-                            <div className=''>
-                                <div className='font-semibold mt-2 text-xl text-left'>
-                                    Bandung/Majalaya - Pangandaran
-                                </div>
-                                <div className='flex gap-3 mt-2 flex-wrap'>
-                                    <div className='bg-yellow-primary/10 text-yellow-600 font-semibold px-2 py-1 rounded-sm'>
-                                        09.00 WIB
-                                    </div>
-                                    <div className='bg-yellow-primary/10 text-yellow-600 font-semibold px-2 py-1 rounded-sm'>
-                                        13.00 WIB
-                                    </div>
-                                    <div className='bg-yellow-primary/10 text-yellow-600 font-semibold px-2 py-1 rounded-sm'>
-                                        16.00 WIB
-                                    </div>
-                                    <div className='bg-yellow-primary/10 text-yellow-600 font-semibold px-2 py-1 rounded-sm'>
-                                        20.00 WIB (PP)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='bg-white shadow-md text-center px-10 py-5 flex flex-col items-start justify-center rounded-2xl'>
-                        <div className='flex items-center gap-3'>
-                            <div className='bg-yellow-primary rounded-full text-4xl text-white p-1'>
-                                <AiFillClockCircle />
-                            </div>
-                            <div className=''>
-                                <div className='font-semibold mt-2 text-xl'>
-                                    Jakarta - Bandung - Denpasar
-                                </div>
-                                <div className='flex gap-3 mt-2'>
-                                    <div className='bg-yellow-primary/10 text-yellow-600 font-semibold px-2 py-1 rounded-sm'>
-                                        20.00 WIB 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>

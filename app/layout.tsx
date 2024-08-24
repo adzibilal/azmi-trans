@@ -9,9 +9,13 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: 'AZMI TRANS',
-    description: 'AMAN NYAMAN EKONOMIS'
+    description: 'Jasa Travel transportasi dan charter drop bandara murah nyaman aman ekonomis antar Kota Bandung Jakarta Bali Majalengka Pangandaran Tasik Ciamis Banjar Cirebon Tegal Semarang Surabaya Probolinggo Banyuwangi Denpasar'
 }
-
+declare global {
+    interface Window {
+      dataLayer: Record<string, any>[];
+    }
+  }
 export default function RootLayout({
     children
 }: Readonly<{
@@ -20,14 +24,12 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <Head>
+            
                 <title>AZMI TRANS</title>
-                <meta name='description' content='AMAN NYAMAN EKONOMIS' />
+                <meta name='description' content='Jasa Travel transportasi dan charter drop bandara murah nyaman aman ekonomis antar Kota Bandung Jakarta Bali Majalengka Pangandaran Tasik Ciamis Banjar Cirebon Tegal Semarang Surabaya Probolinggo Banyuwangi Denpasar' />
                 <link rel='icon' href='/favicon.ico' />
+                
             </Head>
-            <Script
-                async
-                src='https://www.googletagmanager.com/gtag/js?id=AW-965062289'></Script>
-            <Script src='/gtag.js' strategy='afterInteractive'></Script>
             <body className={montserrat.className}>{children}</body>
         </html>
     )

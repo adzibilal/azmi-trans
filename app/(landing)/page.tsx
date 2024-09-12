@@ -13,9 +13,15 @@ export default function Home() {
         <div className=''>
             <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-965062289"></Script>
             <Script id='gtm' src='/gtag.js' strategy='afterInteractive'>
-            {`
+                {`
                 window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-965062289');
             `}
+            </Script>
+
+            <Script id='gtm' src='/gtag.js' strategy='afterInteractive'>
+                {`
+                gtag('event', 'conversion', { 'send_to': 'AW-965062289/CgQ4CLjWp8YZEJHdlswD', 'value': 1, 'currency': 'IDR' });
+                `}
             </Script>
             <HeroSlider />
             <AboutUs />

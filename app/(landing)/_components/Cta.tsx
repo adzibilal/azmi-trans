@@ -3,6 +3,8 @@ import { handleWa } from '@/constants/wa'
 import React from 'react'
 
 const Cta = () => {
+
+
     return (
         <div className='bg-yellow-primary'>
             <div className='max-con py-20 flex flex-col items-center justify-center'>

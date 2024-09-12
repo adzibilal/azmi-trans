@@ -28,7 +28,6 @@ export default function RootLayout({
 
             </Head>
             <body className={montserrat.className}>
-                <GoogleTagManager />
                 {children}
             </body>
             <GoogleAnalytics gaId='AW-965062289' />

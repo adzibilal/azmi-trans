@@ -3,8 +3,6 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Head from 'next/head'
-import Script from 'next/script'
-import GoogleTagManager from './(landing)/_components/analytics/googleTagManager'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
